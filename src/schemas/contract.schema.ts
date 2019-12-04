@@ -6,9 +6,9 @@ export const ContractSchema = new mongoose.Schema({
     loanAmount: Number,
     civilStatus: String,
     monthlyIncome: Number,
-    status: [{
+    status: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'ContractStatus',
-    }],
+    },
 
 });
